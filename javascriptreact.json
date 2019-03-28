@@ -1,0 +1,16 @@
+{
+	"Set reducer and action": {
+		"prefix": "ra",
+		"body": [
+			"const $1 = 'counter/$1';",
+			"export const $2 = createAction($1);",
+			"const $2Action = (state, action) => {",
+			"\treturn {",
+			"\t\t$3: action.payload",
+			"\t}",
+			"}",
+			"//[$1]:$2Action"
+		],
+		"description": "Log output to console"
+	}
+}
