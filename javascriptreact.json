@@ -11,6 +11,6 @@
 			"}",
 			"//[$1]:$2Action"
 		],
-		"description": "Log output to console"
+		"description": "[REDUX] set reducer and action"
 	}
 }
