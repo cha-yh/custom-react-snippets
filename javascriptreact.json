@@ -12,5 +12,21 @@
 			"//[$1]:$2Action"
 		],
 		"description": "[REDUX] set reducer and action"
+	},
+
+	"Set redux module groundwork": {
+		"prefix": "rmg",
+		"body": [
+			"import { createAction, handleActions } from 'redux-actions';",
+			"",
+			"const initialState = {",
+			"\t",
+			"};",
+			"",
+			"export default handleActions({",
+			"\t",
+			"}, initialState);",
+		],
+		"description": "[REDUX] set redux module's groundwork"
 	}
 }
