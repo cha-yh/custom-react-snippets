@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "editor.minimap.enabled": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
