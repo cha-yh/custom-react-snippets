@@ -59,5 +59,23 @@
 			"}, initialState);",
 		],
 		"description": "[REDUX] set redux module's groundwork"
+	},
+
+	// rsx
+	"Set div with cx": {
+		"prefix": "dcxc",
+		"body": [
+			"<div className={cx('${1}')}>",
+            "\t",
+			"</div>"
+		],
+		"description": "[RSX] set dix with classnames style"
+	},
+	"Set cx": {
+		"prefix": "cxc",
+		"body": [
+			"className={cx('${1}')}"
+		],
+		"description": "[RSX] set classnames style"
 	}
 }
