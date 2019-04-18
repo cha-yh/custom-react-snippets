@@ -3,5 +3,8 @@
     "editor.minimap.enabled": false,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
+    },
+    "files.associations": {
+        "*.js": "javascriptreact"
     }
 }
