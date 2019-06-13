@@ -2,14 +2,14 @@
 	"Set reducer and action": {
 		"prefix": "ra",
 		"body": [
-			"const ${1} = '$TM_FILENAME_BASE/${1}';",
-			"export const ${2} = createAction(${1});",
-			"const ${2}Action = (state, action) => {",
+			"const ${2} = '$TM_FILENAME_BASE/${2}';",
+			"export const ${1} = createAction(${2});",
+			"const ${1}Action = (state, action) => {",
 			"\treturn {",
 			"\t\t${3}: action.payload",
 			"\t}",
 			"}",
-			"//[${1}]: ${2}Action"
+			"//[${2}]: ${1}Action"
 		],
 		"description": "[REDUX] set reducer and action"
 	},
