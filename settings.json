@@ -6,5 +6,6 @@
     },
     "files.associations": {
         "*.js": "javascriptreact"
-    }
+    },
+    "terminal.integrated.rendererType": "dom"
 }
