@@ -1,11 +1,9 @@
 {
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "editor.minimap.enabled": false,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
     "files.associations": {
         "*.js": "javascriptreact"
     },
-    "terminal.integrated.rendererType": "dom"
+    "emmet.triggerExpansionOnTab": true,
+    "terminal.integrated.rendererType": "dom",
 }
