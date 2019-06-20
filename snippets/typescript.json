@@ -1,0 +1,25 @@
+{
+	"Set Typeorm Entity": {
+		"prefix": "toe",
+		"body": [
+			"import {Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn} from 'typeorm';",
+			"",
+			"@Entity()",
+			"export class $TM_FILENAME_BASE {",
+			"\t@PrimaryGeneratedColumn()",
+			"\tid!: number;",
+			"",
+			"\t@Column(${3})",
+			"\t${1}!: ${2:string}",
+			"",
+			"\t@CreateDateColumn()",
+			"\tcreatedAt!: Date;",
+			"",
+			"\t@UpdateDateColumn()",
+			"\tupdatedAt!: Date;",
+			"}",
+
+		],
+		"description": "Set typeorm entity"
+	},
+}
