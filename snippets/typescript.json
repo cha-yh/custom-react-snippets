@@ -1,4 +1,8 @@
 {
+	/**
+	 * @FOR_NODEJS
+	 */
+
 	"Set Typeorm Entity": {
 		"prefix": "toe",
 		"body": [
@@ -22,4 +26,85 @@
 		],
 		"description": "Set typeorm entity"
 	},
+
+	"Swagger doc snippet": {
+		"prefix": "sd",
+		"body": [
+			"${1:get}: {",
+			"\tsummary: '${2}',",
+			"\ttags: ['${3}'],",
+			"\tparameters: {",
+			"\t\tbody: Joi.object(),",
+			"\t\tquery: Joi.object(),",
+			"\t\tpathParams: Joi.object()",
+			"\t},",
+			"\tresponses: {",
+			"\t\t'200': {",
+			"\t\t\tschema: Joi.object().keys({})",
+			"\t\t},",
+			"\t\t'400': {",
+			"\t\t\tdescription: 'ERROR_CODE',",
+			"\t\t\tschema: Joi.string()",
+			"\t\t}",
+			"\t}",
+			"}",
+
+		],
+		"description": "Set typeorm entity"
+	},
+
+
+	/**
+	 * @FOR_REACT
+	 */
+
+	"Set redux boilerplate": {
+		"prefix": "reb",
+		"body": [
+			"import {",
+			"\tcreateAction,",
+			"\tcreateReducer",
+			"} from 'typesafe-actions';",
+			"",
+			"/**",
+			" * @InitialState",
+			" */",
+			"export type ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}State = {",
+			"\t",
+			"}",
+			"const initialState:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}State = {",
+			"\t",
+			"}",
+			"",
+			"/**",
+			" * @Actions",
+			" */",
+			"${1}",
+			"",
+			"/**",
+			" * @Reducer",
+			" */",
+			"export default createReducer<${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}State, any>(initialState, {",
+			"\t",
+			"});",
+		],
+		"description": "Set redux boilerplate"
+	},
+
+	"Set redux action": {
+		"prefix": "ra",
+		"body": [
+			"const ${1/(.*)/${1:/upcase}/} = '${TM_FILENAME_BASE}/${1/(.*)/${1:/upcase}/}';",
+			"export const ${2} = createAction(${1/(.*)/${1:/upcase}/})<${3}>();",
+			"const ${2}Handler = (state:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}State, action:ReturnType<typeof ${2}>) => {",
+			"\treturn {",
+			"\t\t...state,",
+			"\t\t${4}",
+			"\t}",
+			"}",
+			"// [${1/(.*)/${1:/upcase}/}] : ${2}Handler",
+		],
+		
+		"description": "Set redux action"
+	}
 }
