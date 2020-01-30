@@ -1,0 +1,80 @@
+{
+	"TypeScript Component with styled(Basic)": {
+		"prefix": "tscs",
+		"body": [
+			"import React from 'react'",
+			"import styled, { css } from 'styled-components';",
+			"import { rem, utils, flex, palette, media } from 'styles/utils';",
+			"",
+			"interface OwnProps {",
+			"",
+			"}",
+			"type Props = OwnProps;",
+			"",
+			"const ${TM_FILENAME_BASE}: React.SFC<Props> = ({}) => {",
+			"\treturn (",
+			"\t\t<${TM_FILENAME_BASE}Block>",
+			"",
+			"\t\t</${TM_FILENAME_BASE}Block>",
+			"\t)",
+			"}",
+			"",
+			"const ${TM_FILENAME_BASE}Block = styled.div`",
+			"\t",
+			"`;",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+		],
+		"description": "TypeScript Component with styled(Basic)"
+	},
+
+	"Custom Input": {
+		"prefix": "ip",
+		"body": [
+			"<Input",
+			"\tname='${1}'",
+			"\tvalue={forms.${1}}",
+			"\tonChange={onChange}",
+			"\tcheckError={getError}",
+			"\trequire={true}",
+			"\tlabel='${1}'",
+			"\tmessage={errors.${1}}",
+			"\terror={errors.${1}}",
+			"/>"
+		],
+		"description": "Custom Input Snippet"
+	},
+
+	"Custom Dropdown": {
+		"prefix": "dp",
+		"body": [
+			"<Dropdown",
+			"\tname='${1}'",
+			"\tvalue={forms.${1}}",
+			"\tonChange={onSelect}",
+			"\tcheckError={getSelectError}",
+			"\trequire={true}",
+			"\tlabel='${1}'",
+			"\tmessage={errors.${1}}",
+			"\terror={errors.${1}}",
+			"\toptions={${2}}",
+			"/>",
+		]
+	},
+
+	"useRequest": {
+		"prefix": "usereq",
+		"body": [
+			"const [",
+			"\tonRequest${1/(.*)/${1:/capitalize}/},",
+			"\t${1}Result,",
+			"\t${1}Loading,",
+			"\t${1}Error",
+			"] = useRequest<any>(()=>",
+			"\tcustomAxios.${2}(",
+			"\t\t${3}",
+			"\t)",
+			");"
+		]
+	}
+}

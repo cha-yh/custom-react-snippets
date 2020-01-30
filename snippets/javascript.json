@@ -1,0 +1,46 @@
+{
+
+	"Set koa ctrl": {
+		"prefix": "kc",
+		"body": [
+			"exports.${1} = async(ctx) => {",
+			"\tconst ${2:param1} = ctx.request.body.${2:param1};",
+			"",
+			"\tconst schema = Joi.object().keys({",
+			"\t\t${2:param1}: Joi.number().required(),",
+			"\t})",
+			"\tJoi.validate({${2:param1}}, schema, (rst) => {",
+			"\t\tif(rst) {",
+			"\t\t\tconsole.log('validate rst :', rst);",
+			"\t\t\tctx.throw(400, 'VALIDATION_ERROR');",
+			"\t\t\tctx.body = rst;",
+			"\t\t}",
+			"\t})",
+			"",
+			"\ttry {",
+			"\t\tconst ${3:data} = await model.${1}(testPool, ${2:param1});",
+			"\t\treturn ${3:data};",
+			"\t} catch(e) {",
+			"\t\tconsole.log('${1} e :', e);",
+			"\t\tctx.throw(400, e)",
+			"\t}",
+			"}",
+		],
+		"description": "Set koa ctrl"
+	},
+
+	"Set koa model": {
+		"prefix": "km",
+		"body": [
+			"exports.${1} = (pool, ${2}) => {",
+			"\tconst query = `",
+			"\t\t",
+			"\t`;",
+			"\tconst params = [${2}];",
+			"\treturn pool.query(query, params);",
+			"}",
+		],
+		"description": "Set koa model"
+	},
+
+}
