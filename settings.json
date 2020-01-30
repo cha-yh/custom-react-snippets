@@ -6,4 +6,16 @@
     },
     "emmet.triggerExpansionOnTab": true,
     "terminal.integrated.rendererType": "dom",
+
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text",
+        "foreground": "green",
+        "background": "white",
+        "opacity": 20,
+        "iconColour": "blue"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "window.zoomLevel": 0,
 }
