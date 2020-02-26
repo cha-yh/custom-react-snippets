@@ -4,7 +4,7 @@
 		"body": [
 			"import React from 'react'",
 			"import styled, { css } from 'styled-components';",
-			"import { rem, utils, flex, palette, media } from 'styles/utils';",
+			"import { rem, utils, flex, palette, media } from 'react-c2c-ui';",
 			"",
 			"interface OwnProps {",
 			"",
