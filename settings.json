@@ -18,4 +18,30 @@
     "javascript.updateImportsOnFileMove.enabled": "never",
     "typescript.updateImportsOnFileMove.enabled": "never",
     "window.zoomLevel": 0,
+
+    "highlight.decorations": { "rangeBehavior": 3 }, // Default decorations from which all others inherit from
+    "highlight.regexFlags": "g", // Default flags used when building the regexes
+    "highlight.regexes": {
+        "((//#) .*)": [ // A regex will be created from this string, don't forget to double escape it
+            {
+                "color": "white",
+                "backgroundColor": "darkviolet"
+            }, 
+          ],
+          "((//##) .*)": [ // A regex will be created from this string, don't forget to double escape it
+            {
+                "color": "#BDBDBD",
+                "backgroundColor": "darkviolet"
+            }, 
+          ],
+          "((//TEMP))": [ // A regex will be created from this string, don't forget to double escape it
+            {
+                "color": "white",
+                "backgroundColor": "#0082fb"
+            }, 
+          ]
+    }, // Object mapping regexes to options or an array of decorations to apply to the capturing groups
+    "highlight.maxMatches": 250,
+    "todo-tree.tree.showScanModeButton": false // Maximum number of matches to decorate per regex, in order not to crash the app with accidental cathastropic regexes
+
 }
