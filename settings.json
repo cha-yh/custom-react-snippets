@@ -25,13 +25,13 @@
         "((//#) .*)": [ // A regex will be created from this string, don't forget to double escape it
             {
                 "color": "white",
-                "backgroundColor": "darkviolet"
+                "backgroundColor": "#9400d3"
             }, 
           ],
           "((//##) .*)": [ // A regex will be created from this string, don't forget to double escape it
             {
-                "color": "#BDBDBD",
-                "backgroundColor": "darkviolet"
+                "color": "white",
+                "backgroundColor": "#197319"
             }, 
           ],
           "((//TEMP))": [ // A regex will be created from this string, don't forget to double escape it
@@ -42,6 +42,7 @@
           ]
     }, // Object mapping regexes to options or an array of decorations to apply to the capturing groups
     "highlight.maxMatches": 250,
-    "todo-tree.tree.showScanModeButton": false // Maximum number of matches to decorate per regex, in order not to crash the app with accidental cathastropic regexes
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.autoIndent": "advanced" // Maximum number of matches to decorate per regex, in order not to crash the app with accidental cathastropic regexes
 
 }
