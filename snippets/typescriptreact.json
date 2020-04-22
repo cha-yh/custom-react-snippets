@@ -34,29 +34,23 @@
 			"<Input",
 			"\tname='${1}'",
 			"\tvalue={forms.${1}}",
-			"\tonChange={onChange}",
-			"\tcheckError={getError}",
-			"\trequire={true}",
 			"\tlabel='${1}'",
-			"\tmessage={errors.${1}}",
-			"\terror={errors.${1}}",
+			"\tonChange={onChange}",
+			"\trequired",
 			"/>"
 		],
 		"description": "Custom Input Snippet"
 	},
 
 	"Custom Dropdown": {
-		"prefix": "dp",
+		"prefix": "slt",
 		"body": [
-			"<Dropdown",
+			"<Select",
 			"\tname='${1}'",
 			"\tvalue={forms.${1}}",
-			"\tonChange={onSelect}",
-			"\tcheckError={getSelectError}",
-			"\trequire={true}",
 			"\tlabel='${1}'",
-			"\tmessage={errors.${1}}",
-			"\terror={errors.${1}}",
+			"\tonChange={onSelect}",
+			"\trequired",
 			"\toptions={${2}}",
 			"/>",
 		]
